@@ -1,11 +1,22 @@
 {
   "name": "tresvales-app",
   "version": "1.0.0",
-  "description": "Comercial Três Vales — Sistema de Gestão Comercial",
   "scripts": {
     "build": "cd frontend && npm install && npm run build && cp -r dist ../backend/public",
-    "start": "cd backend && node server.js",
-    "install-all": "cd frontend && npm install && cd ../backend && npm install"
+    "start": "node backend/server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "socket.io": "^4.7.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "socket.io-client": "^4.7.4",
+    "vite": "^5.1.6"
   },
   "engines": {
     "node": ">=18.0.0"
